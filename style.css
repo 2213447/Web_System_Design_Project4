@@ -1,0 +1,122 @@
+*{
+    margin : 0;
+}
+header h1{
+	text-align: center;
+	line-height: 75px;
+	font-weight: bolder;
+	color: white;
+}
+ul{
+    list-style-type: none;
+}
+nav li{
+    display: inline-block;
+    margin: 15px 60px;
+	position: relative;
+	left: 90px;
+}
+#abox{
+	background-color: salmon;
+	color: white;
+	text-decoration-line: none;
+	padding: 5px;
+}
+#abox:hover{
+	background-color: mistyrose;
+	color: black;
+}
+.at{
+	height: 150px;
+	margin: 30px 15px;
+	padding: 10px;
+}
+section img{
+    float: left;
+    margin-right: 20px;
+}
+#box1{
+    height: 150px;
+    margin-top: 30px;
+	background-image: url(귤.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.8;
+	padding: 10px;
+}
+#tang{
+	color:ghostwhite;
+	text-align: center;
+	line-height: 20px;
+	font-weight: bolder;
+	padding: 10px;
+	margin-top: 35px;
+}
+aside h5{
+	margin-top: 10px;
+}
+aside h4{
+	color: yellow;
+}
+#box2{
+	clear:left;
+	height: 400px;
+	margin-top: 50px;
+	background-color: gold;
+}
+#ad{
+	padding: 20px;
+	text-align: center;
+	line-height: 30px;
+	text-align: center;
+}
+footer li{
+				display: inline-block;
+    margin: 15px 60px;
+				position: relative;
+				left: 145px;
+}
+#abox2{
+	background-color: aliceblue;
+	color:black;
+	text-decoration-line: none;
+	padding: 5px;
+}
+#abox2:hover{
+	background-color: lightskyblue;
+	color: white;
+}
+/*그리드-템플릿 영역*/
+.hbox{
+    background-color: salmon;
+    grid-area: hbox;
+}
+.nbox{
+    background-color: salmon;
+    grid-area: nbox;
+}
+.sbox{
+    background-color: white;
+    grid-area: sbox;
+}
+.side{
+    background-color: white;
+    grid-area: side;
+}
+.foot{
+    background-color: aliceblue;
+    grid-area: foot;
+}
+#wrapper{
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 70px 45px 1fr 1fr 1fr 50px;
+    grid-template-areas: 
+    "hbox hbox hbox"
+    "nbox nbox nbox"
+    "sbox sbox side"
+    "sbox sbox side"
+    "sbox sbox side"
+    "foot foot foot";
+}
